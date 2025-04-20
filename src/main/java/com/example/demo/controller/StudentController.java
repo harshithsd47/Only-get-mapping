@@ -20,17 +20,6 @@ public class StudentController {
     return list;
 }
 
-    @PostMapping("/uploaddetails")
-    public Student uploaddata(@RequestBody Student k){
-    Student data=studentService.saveStudentData(k);
-    return data;
-    }
-
-    @PostMapping("/uploadlist")
-    public List<Student> uploadList(@RequestBody List<Student> l){
-        List<Student> list=studentService.saveStudentList(l);
-        return list;
-    }
 
     @GetMapping("/finddatabyid")
     public Student data(@RequestParam int id){

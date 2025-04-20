@@ -18,15 +18,6 @@ public class StudentService {
         return list;
     }
 
-    public Student saveStudentData(Student k){
-        Student data=studentRepository.save(k);
-        return data;
-    }
-
-    public List<Student> saveStudentList(List<Student> l){
-        List<Student> data=studentRepository.saveAll(l);
-        return data;
-    }
 
     public Student getStudentData(int id){
         Student data=studentRepository.findById(id).get();
